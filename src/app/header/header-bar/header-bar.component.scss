@@ -1,0 +1,49 @@
+.header-bar {
+  background-color: #333545;
+  width: 100vw;
+  height: 5vw;
+  padding: 1vw;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  align-content: center;
+  justify-content: start;
+
+  > div {
+    display: inline-block;
+    margin-left: 1vw;
+  }
+
+  .title-logo {
+      margin-left: 2vw;
+    > img {
+      height: 2vw;
+      width: 2vw;
+    }
+  }
+
+  .title {
+    color: white;
+    font-size: 2vw;
+  }
+
+  .search-bar {
+      position: relative;
+      margin-left: 3vw;
+
+      img {
+          position: absolute;
+          height: 1.5vw;
+          margin: 8px; 
+      }
+
+      input {
+          outline: none;
+          border: 1px solid #e3e3e3;
+          border-radius: 4px;
+          height: 2.5vw;
+          width: 35vw;
+          padding: 10px 10px 10px 35px;
+      }
+  }
+}
