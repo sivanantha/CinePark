@@ -1,0 +1,39 @@
+.slideshow-container {
+  position: relative;
+  margin-top: 15px;
+  overflow: hidden;
+  height: 350px;
+  cursor: pointer;
+
+  img {
+    &.active-slide {
+      position: absolute;
+      width: 98%;
+      object-fit: cover;
+    }
+
+    @keyframes  slide-forward-animation {
+        from {transform: translateX(-100%); opacity: 0}
+        to {transform: translateX(1%); opacity: 1}
+    }
+
+    @keyframes slide-backward-animation {
+        from {transform: translateX(100%); opacity: 0}
+        to {transform: translateX(1%); opacity: 1}
+    }
+
+    &.slide-forward{
+        animation-name: slide-forward-animation;
+    } 
+    
+    &.slide-backward {
+        animation-name: slide-backward-animation;
+    }
+
+    &.slide-forward, &.slide-backward {
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease;
+    }
+  }
+}

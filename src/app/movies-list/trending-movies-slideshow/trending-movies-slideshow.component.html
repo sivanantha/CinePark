@@ -1,0 +1,5 @@
+<div class="slideshow-container">
+    <ng-container *ngFor="let imageUrl of imageUrls; let i = index">
+        <img *ngIf="i === currentSlide" [src]="imageUrl" class="active-slide slide-backward">
+    </ng-container>
+</div>
