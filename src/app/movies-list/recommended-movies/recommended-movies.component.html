@@ -1,0 +1,15 @@
+<div class="recommended-movies">
+    <h2>Recommended Movies</h2>
+    <div class="movies-row">
+        <div *ngFor="let movie of recommendedMovies" class="movie">
+            <img [src]="movie.imageUrl">
+            <span class="likes"><i class="bi bi-heart-fill heart"></i>{{movie.likes}}</span>
+            <div class="movie-details">
+                <div class="movie-title">{{movie.name}}</div>
+                <span class="small-dot">&#9679;</span>
+                <span>{{movie.category}}</span>
+                <span>{{movie.rating}}</span>
+            </div>
+        </div>
+    </div>
+</div>

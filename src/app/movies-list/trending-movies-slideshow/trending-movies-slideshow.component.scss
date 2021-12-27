@@ -1,25 +1,28 @@
 .slideshow-container {
   position: relative;
   margin-top: 15px;
+  height: 300px;
+  width: 100%;
   overflow: hidden;
-  height: 350px;
   cursor: pointer;
 
   img {
+
     &.active-slide {
       position: absolute;
-      width: 98%;
-      object-fit: cover;
+      height: 300px;
+      width: 100%;
+      object-fit: fill;
     }
 
     @keyframes  slide-forward-animation {
         from {transform: translateX(-100%); opacity: 0}
-        to {transform: translateX(1%); opacity: 1}
+        to {transform: translateX(0%); opacity: 1}
     }
 
     @keyframes slide-backward-animation {
         from {transform: translateX(100%); opacity: 0}
-        to {transform: translateX(1%); opacity: 1}
+        to {transform: translateX(0%); opacity: 1}
     }
 
     &.slide-forward{
@@ -36,4 +39,51 @@
         animation-timing-function: ease;
     }
   }
+
+  .prev-btn, .next-btn {
+    position: absolute;
+    top: 40%;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 0px 3px 3px 0px;
+    transition: background-color 0.6s ease;
+  }
+
+  .prev-btn {
+    left: 0;
+  }
+
+  .next-btn {
+    right: 0;
+  }
+
+  .prev-btn:hover, .next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .dot-container {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+
+    .dot {
+      height: 10px;
+      width: 10px;
+      margin: 0 2px;
+      background-color: transparent;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.5s ease;
+    }
+
+    .active-dot {
+      background-color: #fff;
+    }
+    
+  }
+
 }

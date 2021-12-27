@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { slideshowImages } from 'src/assets/mock.data';
 
 @Component({
@@ -8,27 +8,49 @@ import { slideshowImages } from 'src/assets/mock.data';
 })
 export class TrendingMoviesSlideshowComponent implements OnInit {
 
-  constructor() { 
+  constructor() {
   }
 
-  ngOnInit(): void { 
-    setTimeout(() => {
-      this.nextSlide();
-    }, 3000);
+  ngOnInit(): void {
+    this.slideAuto();
   }
-  
+
   imageUrls = slideshowImages.imageUrls;
   currentSlide = 0;
-  
-  nextSlide() {
-    if (this.currentSlide >= this.imageUrls.length - 1) {
-      this.currentSlide = 0;
-    } else {
-      this.currentSlide++;
-    } 
-    setTimeout(() => {
-      this.nextSlide();
-    }, 3000);
+  isMoving = false;
+  isSlidePrevious = false;
+
+  slideAuto() {
+        setTimeout(() => {this.slideNext();this.slideAuto();}, 3000);
+  }
+
+  slideNext() {
+    if (!this.isMoving) {
+      this.isSlidePrevious = false;
+      if (this.currentSlide >= this.imageUrls.length - 1) {
+        this.currentSlide = 0;
+      } else {
+        this.currentSlide++;
+      }
+      this.disableInteraction();
+    }
+  }
+
+  slidePrevious() {
+    if (!this.isMoving) {
+      this.isSlidePrevious = true;
+      if (this.currentSlide <= 0) {
+        this.currentSlide = this.imageUrls.length - 1;
+      } else {
+        this.currentSlide--;
+      }
+      this.disableInteraction();
+    }
+  }
+
+  disableInteraction() {
+    this.isMoving = true;
+    setTimeout(() => { this.isMoving = false }, 500);
   }
 
 }
