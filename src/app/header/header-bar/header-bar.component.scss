@@ -1,3 +1,8 @@
+@font-face {
+  font-family: shink;
+  src: url(/assets/fonts/Shink.otf);
+}
+
 .header-bar {
   background-color: #333545;
   width: 100vw;
@@ -24,7 +29,10 @@
 
   .title {
     color: white;
-    font-size: 2vw;
+    font-family: shink;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
   }
 
   .search-bar {
