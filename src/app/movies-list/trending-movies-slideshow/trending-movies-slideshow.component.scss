@@ -1,13 +1,12 @@
 .slideshow-container {
   position: relative;
-  margin-top: 15px;
   height: 300px;
   width: 100%;
   overflow: hidden;
   cursor: pointer;
 
   img {
-    
+
     &.active-slide {
       height: 300px;
       width: 100%;
