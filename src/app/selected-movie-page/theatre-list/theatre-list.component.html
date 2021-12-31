@@ -1,8 +1,9 @@
-
-<div class="theatre" *ngFor="let theatre of theatres">
-    <div class="theatre-name">{{theatre.name}}, {{theatre.location}}</div>
-    <button class="show-time-btn" *ngFor="let showTime of theatre.showTimes">{{showTime}}</button>
-    <div class="price">&#8377; {{theatre.price}}</div>
-    
-    
+<div class="theatre-list-background">
+    <div class="theatre-list-container">
+        <div class="theatre" *ngFor="let theatre of theatres">
+            <div class="theatre-name">{{theatre.name}}, {{theatre.location}}</div>
+            <button class="show-time-btn" *ngFor="let showTime of theatre.showTimes">{{showTime}}</button>
+            <div class="price">&#8377; {{theatre.price}}</div>
+        </div>
+    </div>
 </div>
