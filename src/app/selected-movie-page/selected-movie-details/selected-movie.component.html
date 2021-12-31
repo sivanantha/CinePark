@@ -1,1 +1,23 @@
-<p>selected-movie works!</p>
+<div class="movie-banner">
+    <img [src]="movie.bannerUrl">
+    <div class="overlay">
+        <div class="movie-tile">
+            <img [src]="movie.imageUrl">
+        </div>
+        <div class="movie-details">
+            <div class="movie-title">{{movie.name}}</div>
+            <div class="movie-category">{{movie.category}}</div>
+            <span class="likes"><i class="bi bi-heart-fill heart"></i>{{movie.likes}}</span>
+            <span class="rating"><i class="bi bi-star-fill"></i>{{movie.rating}} / 10</span>
+            <div class="languages">
+                <i class="bi bi-translate"></i>
+                <ng-container *ngFor="let language of movie.languages; let i = index">
+                    <span>{{language}}<ng-container *ngIf="movie.languages.length-1 != i">, </ng-container>
+                    </span>
+                </ng-container>
+            </div>
+            <div class="quality"><i class="bi bi-file-earmark-play"></i>IMAX, 3D, 4K, 2K</div>
+            <div class="running-time"><i class="bi bi-clock"></i>{{movie.runningTime}}</div>
+        </div>
+    </div>
+</div>

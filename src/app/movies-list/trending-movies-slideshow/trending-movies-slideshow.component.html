@@ -1,12 +1,13 @@
 <div class="slideshow-container">
     <ng-container *ngFor="let imageUrl of imageUrls; let i = index">
         <img *ngIf="i === currentSlide" [src]="imageUrl"
-            [ngClass]="{'active-slide': true, 'slide-backward': !isSlidePrevious, 'slide-forward': isSlidePrevious}"/>
+            [ngClass]="{'active-slide': true, 'slide-backward': !isSlidePrevious, 'slide-forward': isSlidePrevious}" />
     </ng-container>
 
     <a href="#" class="prev-btn" (click)="slidePrevious()">&#10094;</a>
     <a href="#" class="next-btn" (click)="slideNext()">&#10095;</a>
     <span class="dot-container">
-        <span *ngFor="let imageUrl of imageUrls; let i = index" [ngClass]="{'dot': true, 'active-dot': i === currentSlide}"></span>
+        <span *ngFor="let imageUrl of imageUrls; let i = index"
+            [ngClass]="{'dot': true, 'active-dot': i === currentSlide}"></span>
     </span>
 </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { theatres } from 'src/assets/mock.data';
 
 @Component({
   selector: 'app-theatre-list',
@@ -12,4 +13,5 @@ export class TheatreListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  theatres = theatres;
 }

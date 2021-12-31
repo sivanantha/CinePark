@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { movies } from 'src/assets/mock.data';
 
 @Component({
   selector: 'app-selected-movie',
@@ -12,4 +13,5 @@ export class SelectedMovieComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  movie = movies.recommended[0];
 }
