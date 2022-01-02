@@ -1,5 +1,5 @@
 import { Component, OnInit} from '@angular/core';
-import { slideshowImages } from 'src/assets/mock.data';
+import { DataService } from 'src/app/core/services/data.service';
 
 @Component({
   selector: 'app-trending-movies-slideshow',
@@ -7,18 +7,18 @@ import { slideshowImages } from 'src/assets/mock.data';
   styleUrls: ['./trending-movies-slideshow.component.scss']
 })
 export class TrendingMoviesSlideshowComponent implements OnInit {
+  imageUrls: string[];
+  currentSlide = 0;
+  isMoving = false;
+  isSlidePrevious = false;
 
-  constructor() {
+  constructor(dataService: DataService) {
+    this.imageUrls = dataService.getSlideShowImages;
   }
 
   ngOnInit(): void {
     this.slideAuto();
   }
-
-  imageUrls = slideshowImages.imageUrls;
-  currentSlide = 0;
-  isMoving = false;
-  isSlidePrevious = false;
 
   slideAuto() {
         setTimeout(() => {this.slideNext();this.slideAuto();}, 3000);

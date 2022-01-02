@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { movies } from 'src/assets/mock.data';
+
+import { DataService } from '../../core/services/data.service';
+import { Movie } from 'src/app/core/models/movie.model';
+
 
 @Component({
   selector: 'app-recommended-movies',
@@ -7,11 +10,15 @@ import { movies } from 'src/assets/mock.data';
   styleUrls: ['./recommended-movies.component.scss']
 })
 export class RecommendedMoviesComponent implements OnInit {
+  dataService: DataService;
+  recommendedMovies!: Movie[];
 
-  constructor() { }
+  constructor(dataService: DataService) {
+    this.dataService = dataService;
+   }
 
   ngOnInit(): void {
+    this.recommendedMovies = this.dataService.getRecommendedMovies;
   }
 
-  recommendedMovies = movies.recommended;  
 }

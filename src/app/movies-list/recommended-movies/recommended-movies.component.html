@@ -1,8 +1,8 @@
 <div class="recommended-movies">
     <h2>Recommended Movies</h2>
     <div class="movies-row">
-        <div *ngFor="let movie of recommendedMovies" class="movie">
-            <img [src]="movie.imageUrl">
+        <div *ngFor="let movie of recommendedMovies; let index = index;" class="movie">
+            <img [src]="movie.posterImage" [alt]="movie.name + 'poster image'">
             <span class="likes"><i class="bi bi-heart-fill heart"></i>{{movie.likes}}</span>
             <span class="rating"><i class="bi bi-star-fill"></i>{{movie.rating}}</span>
             <div class="movie-details">
@@ -12,7 +12,7 @@
                     <span>{{language}}<span *ngIf="movie.languages.length-1 != i"
                             class="small-dot">&#9679;</span></span>
                 </ng-container>
-                <button routerLink="/movie" class="book-now-btn">Book Now </button>
+                <button routerLink="/movie/{{index}}" class="book-now-btn">Book Now </button>
             </div>
         </div>
     </div>

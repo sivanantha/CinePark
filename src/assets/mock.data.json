@@ -1,0 +1,138 @@
+{
+  "slideShowImages": [
+    "assets/images/slideshow1.jpg",
+    "assets/images/slideshow2.jpg",
+    "assets/images/slideshow3.jpg",
+    "assets/images/slideshow4.jpg",
+    "assets/images/slideshow5.jpg",
+    "assets/images/slideshow6.jpg"
+  ],
+
+  "movies": {
+    "recommended": [
+      {
+        "name": "Spider-Man: No Way Home",
+        "category": "Action / Adventure / Sci-Fi",
+        "posterImage": "assets/images/spider-man.jpg",
+        "bannerImage": "assets/images/spider-man-banner.jpg",
+        "rating": "9.0",
+        "likes": "340k",
+        "runningTime": "2hr 31min",
+        "certificate": "U/A",
+        "languages": ["Tamil", "English", "Hindi", "Telugu"]
+      },
+      {
+        "name": "83",
+        "category": "Drama / Sports",
+        "posterImage": "assets/images/83.jpg",
+        "bannerImage": "assets/images/83-banner.jpg",
+        "rating": "8.0",
+        "likes": "45k",
+        "runningTime": "2hr 45min",
+        "certificate": "U",
+        "languages": ["Tamil", "Hindi"]
+      },
+      {
+        "name": "Pushpa: The Rise - Part 01",
+        "category": "Action / Thriller",
+        "posterImage": "assets/images/pushpa.jpg",
+        "bannerImage": "assets/images/pushpa-banner.jpg",
+        "rating": "7.8",
+        "likes": "30k",
+        "runningTime": "2hr 25min",
+        "certificate": "U/A",
+        "languages": ["Tamil", "Hindi", "Telugu"]
+      },
+      {
+        "name": "Writer",
+        "category": "Crime / Drama",
+        "posterImage": "assets/images/writer.jpg",
+        "bannerImage": "assets/images/writer-banner.jpg",
+        "rating": "8.0",
+        "likes": "50k",
+        "runningTime": "2hr 10min",
+        "certificate": "U",
+        "languages": ["Tamil"]
+      },
+      {
+        "name": "Shyam Singha Roy",
+        "category": "SuperNatural / Thriller",
+        "posterImage": "assets/images/shyam-singha-roy.jpg",
+        "bannerImage": "assets/images/shyam-singha-roy-banner.jpg",
+        "rating": "6.9",
+        "likes": "20k",
+        "runningTime": "2hr 03min",
+        "certificate": "U/A",
+        "languages": ["Telugu"]
+      },
+      {
+        "name": "The Matrix Resurrections",
+        "category": "Action / Sci-Fi / Thriller",
+        "posterImage": "assets/images/matrix-resurrections.jpg",
+        "bannerImage": "assets/images/matrix-resurrections-banner.jpg",
+        "rating": "7.5",
+        "likes": "140k",
+        "runningTime": "1hr 50min",
+        "certificate": "U/A",
+        "languages": ["Tamil", "English", "Hindi"]
+      },
+      {
+        "name": "Maanaadu",
+        "category": "Action / Sci-Fi / Thriller",
+        "posterImage": "assets/images/maanaadu.jpg",
+        "bannerImage": "assets/images/maanaadu-banner.jpg",
+        "rating": "8.5",
+        "likes": "90k",
+        "runningTime": "2hr 00min",
+        "certificate": "U/A",
+        "languages": ["Tamil"]
+      },
+      {
+        "name": "Anandham Vilaiyadum Veedu",
+        "category": "Comedy / Drama / Romantic",
+        "posterImage": "assets/images/anandham-vilaiyadum-veedu.jpg",
+        "bannerImage": "assets/images/Anandham-Vilayadum-Veedu-banner.jpg",
+        "rating": "6.5",
+        "likes": "15k",
+        "runningTime": "2hr 12min",
+        "certificate": "U/A",
+        "languages": ["Tamil"]
+      }
+    ]
+  },
+
+  "theatres": [
+    {
+      "name": "AGS Cinemas",
+      "location": "Maduravoyal",
+      "showTimes": ["10:00 AM", "2:30 PM", "08:00 PM"],
+      "filledSeats": 40,
+      "availableSeats": 40,
+      "price": "250.00"
+    },
+    {
+      "name": "PVR",
+      "location": "Anna Nagar",
+      "showTimes": ["06:00 AM", "02:00 PM", "11:00 PM"],
+      "filledSeats": 20,
+      "availableSeats": 30,
+      "price": "150.00"
+    },
+    {
+      "name": "INOX",
+      "location": "OMR",
+      "showTimes": ["08:30 AM", "01:30 PM", "06:00 PM", "11:30 PM"],
+      "filledSeats": 60,
+      "availableSeats": 10,
+      "price": "145.00"
+    },
+    {
+      "name": "Mayajaal",
+      "location": "ECR",
+      "showTimes": ["12:00 PM", "08:00 PM"],
+      "filledSeats": 29,
+      "availableSeats": 30,
+      "price": "180.00"
+    }
+  ]
+}

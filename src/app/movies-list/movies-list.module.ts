@@ -6,6 +6,7 @@ import { TrendingMoviesSlideshowComponent } from './trending-movies-slideshow/tr
 import { RecommendedMoviesComponent } from './recommended-movies/recommended-movies.component';
 
 import { MoviesListRoutingModule } from './movies-list-routing.module';
+import { DataService } from '../core/services/data.service';
 
 
 @NgModule({

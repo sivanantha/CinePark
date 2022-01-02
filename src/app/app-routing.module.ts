@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [{
-  path: 'movie',
+  path: 'movie/:id',
   loadChildren: () => import('./selected-movie-page/selected-movie-page.module').then(m => m.SelectedMoviePageModule)
 },
 {

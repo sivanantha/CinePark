@@ -34,11 +34,11 @@ button {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(220, 220, 220, 0.2);
+  background: #444;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #111;
+  background: #666;
 }
