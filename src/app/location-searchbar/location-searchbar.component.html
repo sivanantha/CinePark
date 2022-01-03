@@ -1,0 +1,9 @@
+<div [classList]="close ? 'hide-location-searchbar' : 'location-searchbar-background'">
+    <div class="location-searchbar">
+        <div class="location-search-header">Select City</div>
+        <div>
+            <i class="bi bi-search"></i>
+            <input type="text" placeholder="Search for your city" (keyup.enter)="selectCity($event)">
+        </div>
+    </div>
+</div>

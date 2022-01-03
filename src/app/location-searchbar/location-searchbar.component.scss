@@ -1,0 +1,65 @@
+.location-searchbar-background {
+    position: absolute;
+    top: 0;
+    // background-color: rgba(10,10,10, 0.8);
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+
+    .location-searchbar {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        display: flex;
+        transform: translate(-50%);
+        background-color: #0f1014;
+        width: 50vw;
+        height: 30vh;
+        margin: auto;
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: 0px 0px 8px 2px#0f1014;
+
+        .location-search-header {
+            color: #06e9bc;
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 25px;
+        }
+
+        input {
+            color: #fff;
+            height: 5vh;
+            width: 40vw;
+            background-color: inherit;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid #555;
+            font-size: 1.1rem;
+            padding: 15px;
+
+            &:focus {
+                border-color: #999;
+            }
+        }
+
+        i {
+            font-size: 1.1rem;
+            color: #777;
+            border-bottom: 1px solid #555;
+            padding: 4px 5px;
+        }
+
+        &:focus-within {
+            i {
+                border-color: #999;
+            }
+        }
+    }
+}
+
+.hide-location-searchbar {
+    display: none;
+}

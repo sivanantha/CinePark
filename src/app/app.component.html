@@ -1,2 +1,3 @@
-<app-header-bar></app-header-bar>
+<app-header-bar [city]="currentCity"></app-header-bar>
+<app-location-searchbar (selectCityEvent)="selectCity($event)"></app-location-searchbar>
 <router-outlet></router-outlet>

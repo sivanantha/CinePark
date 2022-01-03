@@ -7,9 +7,12 @@
         <div class="theatre" *ngFor="let theatre of theatres">
             <div class="theatre-name">{{theatre.name}}, {{theatre.location}}</div>
             <div class="show-time-container">
-                <button class="show-time-btn" *ngFor="let showTime of theatre.showTimes">{{showTime}}</button>
+                <select class="show-time">
+                    <option *ngFor="let showTime of theatre.showTimes">{{showTime}}</option>
+                </select>
             </div>
             <div class="price">&#8377; {{theatre.price}}</div>
+            <button class="book-btn">Book</button>
         </div>
     </div>
 </div>

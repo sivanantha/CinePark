@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'CinePark';
+  currentCity: string = '';
+
+  selectCity(selectedCity: string) {
+    this.currentCity = selectedCity;
+  }
 }

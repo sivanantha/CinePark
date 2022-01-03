@@ -5,16 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderBarComponent } from './header-bar/header-bar.component';
 import { MoviesListModule } from './movies-list/movies-list.module';
+import { LocationSearchbarComponent } from './location-searchbar/location-searchbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderBarComponent,
+    LocationSearchbarComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    MoviesListModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

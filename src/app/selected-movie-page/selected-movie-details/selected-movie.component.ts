@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
-import { DataService } from 'src/app/core/services/data.service';
 import { Movie } from 'src/app/core/models/movie.model';
 
 
@@ -21,7 +20,4 @@ export class SelectedMovieComponent implements OnInit {
   ngOnInit(): void {
     this.activatedRoute.data.subscribe(data => { this.movie = data['selectedMovie']['movie'] });
   }
-
-
-
 }
