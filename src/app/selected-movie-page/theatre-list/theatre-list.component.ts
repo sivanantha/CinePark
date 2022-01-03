@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core'; 
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Theatre } from 'src/app/core/models/theatre.model';
 import { DataService } from 'src/app/core/services/data.service';
 
@@ -8,13 +9,15 @@ import { DataService } from 'src/app/core/services/data.service';
   styleUrls: ['./theatre-list.component.scss']
 })
 export class TheatreListComponent implements OnInit {
-  theatres: Theatre[];
+  activatedRoute: ActivatedRoute;
+  theatres: Theatre[] | undefined;
 
-  constructor(dataService: DataService) { 
-    this.theatres = dataService.getTheatres;
+  constructor(activatedRoute: ActivatedRoute) {
+    this.activatedRoute = activatedRoute;
   }
 
   ngOnInit(): void {
+    this.activatedRoute.data.subscribe(data => { this.theatres = data['selectedMovie']['theatres'] });
   }
 
 

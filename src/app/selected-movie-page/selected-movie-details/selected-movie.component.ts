@@ -12,23 +12,16 @@ import { Movie } from 'src/app/core/models/movie.model';
 })
 export class SelectedMovieComponent implements OnInit {
   activatedRoute: ActivatedRoute;
-  dataService: DataService;
   movie!: Movie;
 
-  constructor(dataService: DataService, activatedRoute: ActivatedRoute) {
-    this.dataService = dataService;
+  constructor(activatedRoute: ActivatedRoute) {
     this.activatedRoute = activatedRoute;
   }
 
   ngOnInit(): void {
-    this.movie = this.getSelectedMovie();
-  }
-
-  getSelectedMovie(): Movie {
-    let index: number = Number(this.activatedRoute.snapshot.paramMap.get("id"));
-    return this.dataService.getRecommendedMovies[index];
+    this.activatedRoute.data.subscribe(data => { this.movie = data['selectedMovie']['movie'] });
   }
 
 
-  
+
 }

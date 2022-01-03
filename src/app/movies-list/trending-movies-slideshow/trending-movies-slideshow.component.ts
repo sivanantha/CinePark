@@ -1,27 +1,29 @@
-import { Component, OnInit} from '@angular/core';
-import { DataService } from 'src/app/core/services/data.service';
-
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-trending-movies-slideshow',
   templateUrl: './trending-movies-slideshow.component.html',
   styleUrls: ['./trending-movies-slideshow.component.scss']
 })
+
 export class TrendingMoviesSlideshowComponent implements OnInit {
-  imageUrls: string[];
+  activatedRoute: ActivatedRoute;
+  imageUrls!: string[];
   currentSlide = 0;
   isMoving = false;
   isSlidePrevious = false;
 
-  constructor(dataService: DataService) {
-    this.imageUrls = dataService.getSlideShowImages;
+  constructor(activatedRoute: ActivatedRoute) {
+    this.activatedRoute = activatedRoute;
   }
 
   ngOnInit(): void {
+    this.activatedRoute.data.subscribe(data => { this.imageUrls = data['moviesList']['slideShowImages'] });
     this.slideAuto();
   }
 
   slideAuto() {
-        setTimeout(() => {this.slideNext();this.slideAuto();}, 3000);
+    setTimeout(() => { this.slideNext(); this.slideAuto(); }, 3000);
   }
 
   slideNext() {
@@ -52,5 +54,4 @@ export class TrendingMoviesSlideshowComponent implements OnInit {
     this.isMoving = true;
     setTimeout(() => { this.isMoving = false }, 500);
   }
-
 }
