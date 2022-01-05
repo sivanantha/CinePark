@@ -9,6 +9,7 @@ import { Movie } from 'src/app/core/models/movie.model';
   templateUrl: './selected-movie.component.html',
   styleUrls: ['./selected-movie.component.scss']
 })
+
 export class SelectedMovieComponent implements OnInit {
   activatedRoute: ActivatedRoute;
   movie!: Movie;

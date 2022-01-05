@@ -23,9 +23,20 @@
       cursor: pointer;
       border-radius: 10px;
       overflow: hidden;
-      box-shadow: -1px 1px 14px 2px #030303;
-      // box-shadow: 0 1px 20px 0 rgb(0 0 0 / 14%);
-      // box-shadow: -1px 15px 25px 2px rgba(2, 2, 2, 0.6);
+      box-shadow: 0 8px 8px #020505bb, 0 0 8px #0205054f;
+      transition: box-shadow 0.5s;
+
+      &:hover {
+        box-shadow: 0 12px 12px #020505bb, 0 0 12px #0205054f;
+
+        img {
+          transform: scale(1.1);
+        }
+
+        .movie-details {
+          height: 50%;
+        }
+      }
 
       img {
         width: 100%;
@@ -41,7 +52,7 @@
         height: 27%;
         width: 100%;
         padding: 15px 0px 10px 20px;
-        background-color: rgba(0, 0, 0, 0.6);
+        background-color: rgba(15, 16, 20, 0.8);
         color: #fff;
         transition: height 0.5s;
         backdrop-filter: blur(5px);
@@ -99,31 +110,20 @@
       }
 
       .book-now-btn {
-        display: block;
-        font-size: 1.2rem;
         width: 95%;
         margin-top: 20px;
-        color: white;
-        background-color: rgba(0, 0, 0, 0.2);
         padding: 12px 20px;
-        border: 1px solid #fd1c03;
-        border-radius: 5px;
+        background-image: linear-gradient(to top, #246455, #00e3ae);
+        color: #131313;
+        border: none;
+        border-radius: 10px;
+        font-size: 1rem;
         font-weight: 600;
-        transition: 0.6s;
+        transition: 0.5s;
 
         &:hover {
-          background-color: #ff0016;
-          box-shadow: #ff0016 0px 30px 60px -12px;
-        }
-      }
-
-      &:hover {
-        img {
-          transform: scale(1.1);
-        }
-
-        .movie-details {
-          height: 50%;
+          transform: translateY(-3px);
+          box-shadow: 0 8px 8px #020505bb, 0 0 8px #0205054f;
         }
       }
     }
