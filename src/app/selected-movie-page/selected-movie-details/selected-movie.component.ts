@@ -30,7 +30,7 @@ export class SelectedMovieComponent implements OnInit {
 
   setShowDates(): void {
     let todayDate = new Date().getDate();
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 7; i++) {
       let date = new Date();
       date.setDate(todayDate + i)
       this.showDates.push(date);

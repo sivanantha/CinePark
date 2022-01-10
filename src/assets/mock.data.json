@@ -113,7 +113,7 @@
     {
       "name": "AGS Cinemas",
       "location": "Maduravoyal",
-      "showTimes": ["10:00 AM", "2:30 PM", "08:00 PM"],
+      "showTimes": ["10:00 AM", "02:30 PM", "08:00 PM"],
       "filledSeats": 40,
       "availableSeats": 40,
       "price": "250.00"
