@@ -19,6 +19,4 @@ export class TheatreListComponent implements OnInit {
   ngOnInit(): void {
     this.activatedRoute.data.subscribe(data => { this.theatres = data['selectedMovie']['theatres'] });
   }
-
-
 }

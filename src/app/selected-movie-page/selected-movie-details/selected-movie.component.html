@@ -18,6 +18,26 @@
             </div>
             <div class="quality"><i class="bi bi-file-earmark-play"></i>IMAX, 3D, 4K, 2K</div>
             <div class="running-time"><i class="bi bi-clock"></i>{{movie.runningTime}}</div>
+            <button (click)="toggleTrailerWindow($event)" class="watch-trailer-btn"><i class="bi bi-play-btn-fill"></i>Watch Trailer</button>
         </div>
     </div>
+</div>
+<div class="date-language-container">
+    <div class="date-container" *ngFor="let date of showDates">
+        <div class="date">{{date | date: "dd"}}</div>
+        <div class="day">{{date | date: "EEE"}}</div>
+    </div>
+
+    <div class="language">
+        <select>
+            <option *ngFor="let language of movie.languages">{{language}}</option>
+        </select>
+    </div>
+</div>
+<div [classList]="hideTrailer ? 'hide-trailer' : 'trailer'">
+    <span (click)="toggleTrailerWindow($event)" class="trailer-close-btn"><i class="bi bi-x-lg"></i></span>
+    <iframe [src]="trailerUrl" width="853" height="480" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>
 </div>

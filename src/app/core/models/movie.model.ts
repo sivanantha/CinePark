@@ -8,4 +8,5 @@ export interface Movie {
     certificate: string;
     languages: string[];
     runningTime: string;
+    trailer: string;
   }

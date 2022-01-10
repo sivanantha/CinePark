@@ -45,7 +45,7 @@
       text-align: center;
       transition: color 0.5s, border 0.2s;
 
-      &:hover, &.active-link {
+      &:hover {
         color: white;
         border-bottom: 1px solid #f4d03f;
         border-image: linear-gradient(to right, #16a085 0%, #f4d03f 100%) 0 0 100% 0;

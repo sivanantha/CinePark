@@ -3,12 +3,13 @@
   grid-template-columns: 25% 25% 25% 25%;
   align-items: center;
   justify-items: center;
+  justify-content: space-evenly;
   margin: auto;
   margin-top: 7vh;
   width: 90%;
   height: 10vh;
   background-color: #131317;
-  padding: 10px;
+  padding: 10px 7vw;
   border-radius: 10px;
   border: 2px solid #131319;
   border-left: 5px solid #f9d423;
@@ -23,6 +24,7 @@
     font-size: 1rem;
     font-weight: 500;
     color: #a3a3a3;
+    justify-self: left;
   }
 
   .show-time-container {
@@ -39,8 +41,7 @@
     font-weight: 600;
 
     option {
-      background-color: #333;
-      border: none;
+      background-color: #131317;
     }
   }
 
@@ -62,6 +63,7 @@
     font-size: 1rem;
     font-weight: 600;
     transition:  0.5s;
+    justify-self: end;
 
     &:hover {
       transform: translateY(-3px);

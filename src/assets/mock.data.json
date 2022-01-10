@@ -19,7 +19,8 @@
         "likes": "340k",
         "runningTime": "2hr 31min",
         "certificate": "U/A",
-        "languages": ["Tamil", "English", "Hindi", "Telugu"]
+        "languages": ["Tamil", "English", "Hindi", "Telugu"],
+        "trailer": "https://www.youtube.com/embed/JfVOs4VSpmA"
       },
       {
         "name": "83",
@@ -30,7 +31,8 @@
         "likes": "45k",
         "runningTime": "2hr 45min",
         "certificate": "U",
-        "languages": ["Tamil", "Hindi"]
+        "languages": ["Tamil", "Hindi"],
+        "trailer": "https://www.youtube.com/embed/QHdkC6Kn0Io"
       },
       {
         "name": "Pushpa: The Rise - Part 01",
@@ -41,7 +43,8 @@
         "likes": "30k",
         "runningTime": "2hr 25min",
         "certificate": "U/A",
-        "languages": ["Tamil", "Hindi", "Telugu"]
+        "languages": ["Tamil", "Hindi", "Telugu"],
+        "trailer": "https://www.youtube.com/embed/Q1NKMPhP8PY"
       },
       {
         "name": "Writer",
@@ -52,7 +55,8 @@
         "likes": "50k",
         "runningTime": "2hr 10min",
         "certificate": "U",
-        "languages": ["Tamil"]
+        "languages": ["Tamil"],
+        "trailer": "https://www.youtube.com/embed/n0tEAKyFXFM"
       },
       {
         "name": "Shyam Singha Roy",
@@ -63,7 +67,8 @@
         "likes": "20k",
         "runningTime": "2hr 03min",
         "certificate": "U/A",
-        "languages": ["Telugu"]
+        "languages": ["Telugu"],
+        "trailer": "https://www.youtube.com/embed/QliDRYaknmI"
       },
       {
         "name": "The Matrix Resurrections",
@@ -74,7 +79,8 @@
         "likes": "140k",
         "runningTime": "1hr 50min",
         "certificate": "U/A",
-        "languages": ["Tamil", "English", "Hindi"]
+        "languages": ["Tamil", "English", "Hindi"],
+        "trailer": "https://www.youtube.com/embed/9ix7TUGVYIo"
       },
       {
         "name": "Maanaadu",
@@ -85,7 +91,8 @@
         "likes": "90k",
         "runningTime": "2hr 00min",
         "certificate": "U/A",
-        "languages": ["Tamil"]
+        "languages": ["Tamil"],
+        "trailer": "https://www.youtube.com/embed/t9retstFUlM"
       },
       {
         "name": "Anandham Vilaiyadum Veedu",
@@ -96,7 +103,8 @@
         "likes": "15k",
         "runningTime": "2hr 12min",
         "certificate": "U/A",
-        "languages": ["Tamil"]
+        "languages": ["Tamil"],
+        "trailer": "https://www.youtube.com/embed/m5kS2z_PB60"
       }
     ]
   },
